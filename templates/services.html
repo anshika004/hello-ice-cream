@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block style %}
+.services-c{
+    margin:30px;
+}
+{% endblock style %}
+
+{% block body %}
+<div class="services-c">
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+    
+    <p class="fs-5 text-muted">Welcome to <strong>Anshika Ice Creams</strong>, where we offer a variety of delicious services to satisfy your sweet cravings. Our commitment to quality and customer satisfaction drives everything we do. Explore our range of services designed to make your ice cream experience memorable.</p>
+    <h1 class="display-4 fw-normal">Our Pricings</h1>
+  </div>
+
+<main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Ice Cream Delivery</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">₹50<small class="text-muted fw-light">/serve</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Enjoy the convenience of having your favorite ice cream flavors delivered right to your doorstep. We offer swift and reliable delivery services, ensuring your treats arrive fresh and ready to enjoy.</li>
+              </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Online Ordering</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">₹100<small class="text-muted fw-light">/serve</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Order your ice cream online and have it ready for pickup at our store. Skip the lines and save time with our user-friendly online ordering system. Choose from our wide selection of flavors, and we'll prepare your order for a quick pickup.</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Order</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-white bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Ice Cream Subscription</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">₹150<small class="text-muted fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Join our Ice Cream Club and treat yourself to a monthly ice cream subscription. Each month, discover new and exclusive flavors, delivered right to your door, and enjoy a sweet surprise to brighten your days.</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="display-6 text-center mb-4">Compare plans</h2>
+
+    <div class="table-responsive">
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th style="width: 34%;"></th>
+            <th style="width: 22%;">Ice Cream Delivery</th>
+            <th style="width: 22%;">Online Ordering</th>
+            <th style="width: 22%;">Ice Cream Subscription</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">Domestic use</th>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Small Family Function</th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">Large Family Function</th>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Catering for Corporate Events</th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"></use></svg></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+{% endblock body %}

@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block style %}
+<style>
+  .carousel .item {
+    height: 200px;
+  }
+  
+  .item img {
+      position: absolute;
+      object-fit:cover;
+      top: 0;
+      left: 0;
+      min-height: 200px;
+  }
+  .card-test{
+    font-style: italic;
+  }
+</style>
+{% endblock style %}
+
+{% block body %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<div class="container-fluid px-0">
+   
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/static/img/new6.jpg" class="img-fluid d-block w-100 item img" style="height: 400px;" alt="..." >
+            <div class="carousel-caption d-none d-md-block label">
+              <h5 class="label">Cooling Your Cravings</h5>
+              <p class="label">One Scoop Away</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/static/img/new4.jpg" class="img-fluid d-block w-100 item img" style="height: 400px;" alt="...">
+            <div class="carousel-caption d-none d-md-block label">
+              <h5 class="label">Our Scoops</h5>
+              <p class="label">Your Smiles</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/static/img/new3.jpg" class="d-block w-100 item img" 
+            style="height: 400px;" alt="...">
+            <div class="carousel-caption d-none d-md-block label">
+              <h5 class="label">Frozen Bliss</h5>
+              <p class="label">Unleash the Sweetness</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+</div> 
+
+<div class="album py-3 bg-light">
+  <div class="container">
+<h1 class="my-4 text-center">Select from our range of Ice-Creams</h1>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/black raspberry.jpeg" class="d-block w-100">
+
+          <div class="card-body">
+            <p class="card-text">Black Raspberry</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Buy now</button>
+              </div>
+              <small class="text-muted">₹350</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/salted caramel.jpg" class="d-block w-100">
+
+          <div class="card-body">
+            <p class="card-text">Salted Caramel</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Buy now</button>
+              </div>
+              <small class="text-muted">₹200</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/vanilla.jpg" class="d-block w-100">
+
+          <div class="card-body">
+            <p class="card-text">Vanilla</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Buy now</button>
+              </div>
+              <small class="text-muted">₹150</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/chocolate.jpg" class="d-block w-100">
+
+          <div class="card-body">
+            <p class="card-text">Chocolate</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Buy now</button>
+              </div>
+              <small class="text-muted">₹250</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/Mint chocolate chip2.jpg" class="d-block w-100">
+
+          <div class="card-body">
+            <p class="card-text">Mint Chocolate Chip</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Buy now</button>
+              </div>
+              <small class="text-muted">₹350</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/static/img/butterscotch.jpg" class="d-block w-100">
+
+          <div class="card-body">
+            <p class="card-text">Butterscotch</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Add to cart</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Buy now</button>
+              </div>
+              <small class="text-muted">₹250</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}
+
+
+

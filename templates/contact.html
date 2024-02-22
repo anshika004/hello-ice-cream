@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock title %}
+{% block style %}
+{% endblock style %}
+<style>
+  {% comment %} img{
+    margin:0;
+    padding:0;
+
+  } {% endcomment %}
+    .me{
+        height:100px;
+        width:1000px;
+        margin:0;
+        padding:0;
+    }
+</style>
+{% block body %}
+
+
+   <div class="mx-auto container-fluid me px=0 mx=0"> <img src="/static/img/cont3.jpg" class="cover img-fluid mx-auto w-100"> </div>
+    <h1 class="text-center">
+        Contact Us
+    </h1>
+
+<div class="container">
+    <form method="post" action="/contact">
+      {% csrf_token %}
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" >
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Contact no.</label>
+            <input type="phone" class="form-control" id="phone" name="phone" placeholder="10 digit phone no." >
+          </div>
+         <div class="mb-3">
+          <label for="Emai1" class="form-label">Email address</label>
+          <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="desc" class="form-label">Tell us what are you you contacting for...</label>
+            <textarea type="desc" class="form-control" id="desc" name="desc" placeholder="Your text here..." >
+                 </textarea>
+          </div>
+        <div class="mb-3 form-check">
+            <p>
+               
+            </p>
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Make sure all the entries filled are correct.</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+</div>    
+{% endblock body %}
